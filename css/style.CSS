@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* reset */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* variavel */
+:root {
+    --primary: #000000;
+    --secondary: #0000ff;
+}
+
+/* Animações para as seções */
+.secao {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.secao.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+header {
+    position: sticky;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    font-size: 2rem;
+    color: #333;
+    font-family: 'Nunito', sans-serif; /* Garante que todos usem a mesma fonte */
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Nunito', sans-serif; /* Garante que todos usem a mesma fonte */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #93917c;  /* Cor ao passar o mouse */
+}
+
+
+/* banner principal */
+.lançamento { 
+    gap: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('https://cdn.pixabay.com/photo/2024/07/09/16/37/abstract-8884025_1280.png'); 
+    background-size: cover; 
+    background-position: center;
+    width: 100%; 
+    height: 700px; 
+    margin: 20px; 
+    border: none;
+}
+
+.lançamento h1 { 
+    color: rgba(255, 255, 255, 0.174); 
+    font-size: 1.8rem; 
+    text-align: center; 
+}
+
+.lançamento h2 {
+    color: #c9c9c9;
+    font-size: 1.4rem;
+    text-align: end;
+}
+
+/* Banner */
+.banners-container {
+    gap: 30px;
+    display: flex;
+    /* border: 15px solid #c9c9c9; */
+    margin: 50px;
+    size-adjust: auto;
+    
+    .banner {
+        background-color: #c9c9c9;
+        padding: 10px 10px;
+        align-items: center;
+        width: auto;
+    }
+    
+    .banner h2 {
+        color: black;
+        font-size: 1.2rem;  /* x16px x9px */
+        text-align: center;
+        /* px, rem, em e % */
+
+        &.banner-title {
+            color: #303030;
+            font: 1.8rem;
+        }
+    }  
+}
+/* less css ou SCSS ou SASS > Pré processadores css */
+
+/* Padding e Margin */
+/* 
+    Margin: 10px;   10px cima, baixo, esq e dir
+    Margin: 5px 10px;'5px cima e baixo & 10px esq e dir
+    margin: 5px 10px 15px; 5px cima & 10px esque e dir & 15px baixo
+    Margin: 5px 10px 15px 20px; 5px cima &10px dir & 15px baixo & 20px esq
+*/
+
+@media screen and (max-width: 1080px) { 
+    .banner {
+        margin: 10px;
+    }
+    
+    main {
+        display: flex;
+    }
+}
+
+/* secções */
+ .container {
+     display: flex;
+     max-width: 100%;
+     margin: 30px auto;
+     align-items: center;
+     background-color: #ffffff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     gap: 40px;
+
+     &.meio01 {
+        justify-content: space-between;
+    }
+
+     .meio {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: right;
+        width: 80%;
+     }
+}
+
+.imagem {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.texto {
+    width: 400px;
+}
+
+.texto h1 {
+    margin-top: 0;
+}
+
+.texto p {
+    line-height: 1.6;
+}
+
+.grid-container {
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px; 
+}
+
+.grid-item {
+    background-color: #f0f0f0; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+#rodape {
+    background-color: #ffffff;
+    color: #000000;
+    justify-content: center;
+    margin: 100px 100px 100px 200px;
+    display: flex;
+}

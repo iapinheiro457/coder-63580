@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ítalo Pinheiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #000000;
+    --secondary: #0000ff;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    font-size: 2rem;
+    color: #333;
+    font-family: 'Nunito', sans-serif; /* Garante que todos usem a mesma fonte */
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Nunito', sans-serif; /* Garante que todos usem a mesma fonte */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #93917c;  /* Cor ao passar o mouse */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    padding: 50px;
+    margin-top: 0;
+    gap: 50px;
+    min-height: 800px;
+}
+
+.profile-img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.profile-content {
+    text-align: left;
+}
+
+.profile-content h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.profile-content h4 {
+    margin-top: 0px;
+    font-size: 1.6rem;
+}
+
+.profile-content p {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+/* Add line breaks for the paragraph text */
+.profile-content p br {
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+#rodape {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+#rodape a:hover {
+    color: #0000ff;
+}
+</style>
+
+
+<body>
+    <header>
+        <h1 id="logo">Ítalo Pinheiro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div class="profile-container">
+        <img src="https://cdn.pixabay.com/photo/2020/11/22/11/53/sky-5766341_1280.jpg" alt="minha foto" class="profile-img">
+        <div class="profile-content">
+            <h1>Ítalo Pinheiro</h1>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi doloribus quam officiis<br>
+                quisquam, quis odio harum, nihil vero labore soluta porro nesciunt, inventore<br>
+                eveniet ratione fuga. Obcaecati reprehenderit fugit magni!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <nav id="rodape">
+            <ul>
+                <li><a href="https://www.behance.net/italopinheiro">Behance</a></li>
+                <li><a href="https://www.linkedin.com/in/italopinheiro/?originalSubdomain=br">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/italo.pinheiro7/">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
